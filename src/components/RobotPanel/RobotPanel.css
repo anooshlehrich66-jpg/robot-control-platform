@@ -1,0 +1,140 @@
+.robot-panel {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.robot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.robot-header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #007bff;
+}
+
+.power-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.power-btn.on {
+  background: #e74c3c;
+  color: white;
+}
+
+.power-btn.off {
+  background: #27ae60;
+  color: white;
+}
+
+.robot-model {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.model-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.robot-icon {
+  position: relative;
+  width: 80px;
+  height: 60px;
+}
+
+.robot-body {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 35px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border-radius: 8px;
+}
+
+.robot-wheel {
+  position: absolute;
+  bottom: 5px;
+  width: 15px;
+  height: 25px;
+  background: #333;
+  border-radius: 4px;
+}
+
+.robot-wheel.left {
+  left: 12px;
+}
+
+.robot-wheel.right {
+  right: 12px;
+}
+
+.robot-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-item .label {
+  width: 50px;
+  color: #666;
+  font-size: 14px;
+}
+
+.info-item .value {
+  min-width: 60px;
+  color: #007bff;
+  font-weight: 500;
+}
+
+.power-bar, .stat-bar {
+  flex: 1;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.power-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #27ae60, #2ecc71);
+  border-radius: 4px;
+  transition: width 0.3s;
+}
+
+.stat-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s;
+}
+
+.stat-fill.cpu {
+  background: linear-gradient(90deg, #f39c12, #f1c40f);
+}
+
+.stat-fill.memory {
+  background: linear-gradient(90deg, #9b59b6, #8e44ad);
+}

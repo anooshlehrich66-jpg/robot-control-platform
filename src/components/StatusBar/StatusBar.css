@@ -1,0 +1,36 @@
+.status-bar {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.status-item .indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.status-item .indicator.online {
+  background: #2ecc71;
+  box-shadow: 0 0 8px #2ecc71;
+}
+
+.status-item .indicator.offline {
+  background: #e74c3c;
+}
+
+.status-item .label {
+  color: #888;
+}
+
+.status-item .warning {
+  color: #e74c3c;
+}

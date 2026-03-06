@@ -1,0 +1,88 @@
+.task-panel {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.task-header {
+  margin-bottom: 15px;
+}
+
+.task-header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #007bff;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.task-item.running {
+  border-color: #f39c12;
+}
+
+.task-item.completed {
+  border-color: #2ecc71;
+}
+
+.task-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.task-name {
+  font-size: 14px;
+  color: #333;
+}
+
+.task-status {
+  font-size: 12px;
+  color: #888;
+}
+
+.task-status.running {
+  color: #f39c12;
+}
+
+.task-status.completed {
+  color: #2ecc71;
+}
+
+.task-btn {
+  padding: 6px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.3s;
+  background: #e0e0e0;
+  color: #333;
+}
+
+.task-btn:hover {
+  background: #d0d0d0;
+}
+
+.task-btn.running {
+  background: #e74c3c;
+}
+
+.task-btn.running:hover {
+  background: #c0392b;
+}
