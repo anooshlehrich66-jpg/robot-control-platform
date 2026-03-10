@@ -1,16 +1,7 @@
-import { useState, useRef, useEffect } from 'react'
 import './VideoPanel.css'
 
 function VideoPanel({ streamUrl }) {
-  const [isConnected, setIsConnected] = useState(false)
-  const [error, setError] = useState(null)
-  const videoRef = useRef(null)
-
-  useEffect(() => {
-    if (streamUrl && videoRef.current) {
-      setIsConnected(true)
-    }
-  }, [streamUrl])
+  const isConnected = Boolean(streamUrl)
 
   return (
     <div className="video-panel">
